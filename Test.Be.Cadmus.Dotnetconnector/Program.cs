@@ -59,7 +59,7 @@ namespace Test.Be.Cadmus.Dotnetconnector
                 ConvertResponse resp = Convertor.DoConvert(metadata, datasources, "<YOUR DOC CONFIG ID>");
                 Console.WriteLine(resp.result.ToString() + " - request " + i);
                 Console.WriteLine("Finished at: " + DateTime.Now.ToString());
-                resp.SaveToFile(@"C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\");
+                resp.SaveToFile(@"<YOUR PATH>\");
                 Console.WriteLine("--------------------------------------------------------------");
                 //Console.WriteLine("Done, file saved under name: " + resp.metadata.targetName);
             }
