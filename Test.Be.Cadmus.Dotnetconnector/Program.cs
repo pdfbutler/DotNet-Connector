@@ -54,7 +54,7 @@ namespace Test.Be.Cadmus.Dotnetconnector
             
             Convertor.Username = "<YOUR USERNAME>";
             Convertor.Password = "<YOUR PASSWORD>";
-            for(int i = 0; i < 10; i++) {
+            for(int i = 0; i < 1; i++) {
                 Console.WriteLine("Starting at: " + DateTime.Now.ToString());
                 ConvertResponse resp = Convertor.DoConvert(metadata, datasources, "<YOUR DOC CONFIG ID>");
                 Console.WriteLine(resp.result.ToString() + " - request " + i);
