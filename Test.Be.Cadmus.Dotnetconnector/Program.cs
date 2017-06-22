@@ -52,11 +52,11 @@ namespace Test.Be.Cadmus.Dotnetconnector
             l1.AddData(l1_2);
             */
             
-            Convertor.Username = "istuyver22";
-            Convertor.Password = "4bcb0e15-cbd3-4ca8-b9c6-ce9e5df67b22";
+            Convertor.Username = "<YOUR USERNAME>";
+            Convertor.Password = "<YOUR PASSWORD>";
             for(int i = 0; i < 10; i++) {
                 Console.WriteLine("Starting at: " + DateTime.Now.ToString());
-                ConvertResponse resp = Convertor.DoConvert(metadata, datasources, "2457a47d-829a-4a2b-8d6c-331fd877c2ec");
+                ConvertResponse resp = Convertor.DoConvert(metadata, datasources, "<YOUR DOC CONFIG ID>");
                 Console.WriteLine(resp.result.ToString() + " - request " + i);
                 Console.WriteLine("Finished at: " + DateTime.Now.ToString());
                 resp.SaveToFile(@"C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\");
