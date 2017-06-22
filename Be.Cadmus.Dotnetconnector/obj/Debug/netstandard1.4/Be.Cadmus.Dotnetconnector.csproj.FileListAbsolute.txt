@@ -1,0 +1,12 @@
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution2\Be.Cadmus.Dotnetconnector\bin\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.deps.json
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution2\Be.Cadmus.Dotnetconnector\bin\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.dll
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution2\Be.Cadmus.Dotnetconnector\bin\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.pdb
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution2\Be.Cadmus.Dotnetconnector\obj\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.AssemblyInfo.cs
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution2\Be.Cadmus.Dotnetconnector\obj\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.dll
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution2\Be.Cadmus.Dotnetconnector\obj\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.pdb
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\Be.Cadmus.Dotnetconnector\bin\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.deps.json
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\Be.Cadmus.Dotnetconnector\bin\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.dll
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\Be.Cadmus.Dotnetconnector\bin\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.pdb
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\Be.Cadmus.Dotnetconnector\obj\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.AssemblyInfo.cs
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\Be.Cadmus.Dotnetconnector\obj\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.dll
+C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\Be.Cadmus.Dotnetconnector\obj\Debug\netstandard1.4\Be.Cadmus.Dotnetconnector.pdb
