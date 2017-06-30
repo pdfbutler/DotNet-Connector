@@ -15,11 +15,12 @@ namespace Test.Be.Cadmus.Dotnetconnector
             Metadata metadata = new Metadata();
             metadata.organizationId = "CloudCrossing.Sales";
             metadata.stage = Constants.Stage.TEST;
-            metadata.targetName = "[[!AccountName!]]_[[!StageName!]].pdf";
+            metadata.targetName = "[[!AccountName!]]_[[!StageName!]]";
             metadata.userId = "istuyver";
+            metadata.targetType = Constants.ConvertFileType.PDF;
 
             Datasources datasources = new Datasources();
-            DatasourceSingle s1 = datasources.GetSingle("18393bdc-1445-4cf0-8e05-79fdb9e0d7ec");
+            DatasourceSingle s1 = datasources.GetSingle("<YOUR DS ID>");
             dynamic s1_1 = s1.GetDictionary();
             s1_1.OppOwner = "Igor Stuyver";
             s1_1.AccountName = "CloudCrossing";
@@ -31,7 +32,7 @@ namespace Test.Be.Cadmus.Dotnetconnector
             s1.addData("StageName", "Closed Won");
             */
 
-            DatasourceList l1 = datasources.GetList("62dbb7d8-6c49-4f40-8d4b-8a60e1a00f23");
+            DatasourceList l1 = datasources.GetList("<YOUR DS ID>");
             dynamic l1_1 = l1.GetDictionary();
             l1_1.ProdName = "Prod 1";
             l1_1.ProdPrice = "1000";
@@ -54,12 +55,13 @@ namespace Test.Be.Cadmus.Dotnetconnector
             
             Convertor.Username = "<YOUR USERNAME>";
             Convertor.Password = "<YOUR PASSWORD>";
-            for(int i = 0; i < 1; i++) {
+            for(int i = 0; i < 10; i++) {
                 Console.WriteLine("Starting at: " + DateTime.Now.ToString());
                 ConvertResponse resp = Convertor.DoConvert(metadata, datasources, "<YOUR DOC CONFIG ID>");
                 Console.WriteLine(resp.result.ToString() + " - request " + i);
+                Console.WriteLine("FileName: " + resp.metadata.targetName);
                 Console.WriteLine("Finished at: " + DateTime.Now.ToString());
-                resp.SaveToFile(@"<YOUR PATH>\");
+                resp.SaveToFile(@"C:\Users\istuyver\Documents\Igor\Cadmus\DotNetConnectorSolution\");
                 Console.WriteLine("--------------------------------------------------------------");
                 //Console.WriteLine("Done, file saved under name: " + resp.metadata.targetName);
             }

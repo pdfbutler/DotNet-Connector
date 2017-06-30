@@ -13,5 +13,6 @@ namespace Be.Cadmus.Dotnetconnector.Model {
         public Constants.Stage stage { get; set; }
         public string targetName { get; set; }
         public string version { get{ return Constants.CURRENT_VERSION;} }
+        public Constants.ConvertFileType targetType { get; set; }
     }
 }

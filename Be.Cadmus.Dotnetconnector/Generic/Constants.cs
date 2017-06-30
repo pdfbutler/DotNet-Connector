@@ -42,5 +42,10 @@ namespace Be.Cadmus.Dotnetconnector.Generic {
             ADMIN,
             USER
         }
+
+        public enum ConvertFileType {
+            PDF,
+            DOCX
+        }
     }
 }
