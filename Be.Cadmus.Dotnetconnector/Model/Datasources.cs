@@ -26,6 +26,14 @@ namespace Be.Cadmus.Dotnetconnector.Model {
             return temp;
         }
 
+        public DatasourcePicture GetPicture(string name) {
+            DatasourcePicture temp = new DatasourcePicture();
+            temp.setName(name);
+            this.datasources.Add(temp);
+            
+            return temp;
+        }
+
         public List<AbstractDatasource> GetDatasources() {
             return datasources;
         }
@@ -57,6 +65,19 @@ namespace Be.Cadmus.Dotnetconnector.Model {
                         foreach(KeyValuePair<string, string> entry in item) {
                             itemEntry[entry.Key] = entry.Value;
                         }
+                        data.Add(itemEntry);
+                    }
+                    dsItem.data = data;
+                } else if(ad is DatasourcePicture) {
+                    DatasourcePicture ds = (DatasourcePicture)ad;
+
+                    JArray data = new JArray();
+                    foreach(DatasourcePicture.Picture item in ds.GetData()) {
+                        dynamic itemEntry = new JObject();
+                        itemEntry["base64"] = item.base64;
+                        itemEntry["name"] = item.name;
+                        itemEntry["parentId"] = item.parentId;
+
                         data.Add(itemEntry);
                     }
                     dsItem.data = data;
